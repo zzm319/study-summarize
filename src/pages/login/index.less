@@ -1,0 +1,58 @@
+
+.content {
+    width: 750rpx;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FCFEFF;
+    box-sizing: border-box;
+    padding-top: 232rpx;
+    margin: 0 auto;
+
+    .code-area {
+        margin-top: 112rpx;
+
+        .prompt {
+            font-size: 28rpx;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: #959CA6;
+        }
+
+        .code-input {
+            position: relative;
+            margin-top: 80rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 568rpx;
+            height: 132rpx;
+
+            .input-code {
+                width: 100rpx;
+                height: 132rpx;
+                border-bottom: 2rpx solid #959CA6;
+                margin-right: 56rpx;
+                font-size: 80rpx;
+                font-family: DINCond-Medium;
+                font-weight: 400;
+                color: #262C33;
+                text-align: center;
+                background-color: #FCFEFF;
+                background: #FCFEFF;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                /deep/ .uni-input-input {
+                    -webkit-text-fill-color: #262C33;
+                    transition: background-color 5000s ease-out 0.5s;
+                }
+            }
+
+        }
+    }
+}
